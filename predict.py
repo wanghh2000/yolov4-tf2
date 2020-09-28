@@ -8,7 +8,8 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 yolo = YOLO()
 
 while True:
-    img = input('Input image filename:')
+    #img = input('Input image filename:')
+    img = './img/street.jpg'
     try:
         image = Image.open(img)
     except:
@@ -17,3 +18,4 @@ while True:
     else:
         r_image = yolo.detect_image(image)
         r_image.show()
+    break

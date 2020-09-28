@@ -19,7 +19,7 @@ from utils.utils import letterbox_image
 #--------------------------------------------#
 class YOLO(object):
     _defaults = {
-        "model_path": 'model_data/yolo4_weight.h5',
+        "model_path": 'C:/bd_ai/dli/yolo/yolo4_weight.h5',
         "anchors_path": 'model_data/yolo_anchors.txt',
         "classes_path": 'model_data/coco_classes.txt',
         "score" : 0.5,
